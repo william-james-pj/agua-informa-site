@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/dist/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -15,8 +15,24 @@
     <title>Agua Informa</title>
   </head>
   <body>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <p>Água Informa</p>
+        </a>
 
-    
+        <a href="#" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a
+          ><a href="#">Blog</a><a href="#">Careers</a>
+        </div>
+      </nav>
+    </header>
 
     <script src="/app/js/script.js"></script>
   </body>

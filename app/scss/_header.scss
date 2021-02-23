@@ -1,0 +1,60 @@
+.header {
+  nav {
+    padding: 1.0625rem 1.5rem; // 17px 24px
+  }
+
+  &__logo {
+    p {
+      font-weight: 700;
+      color: $darkBlue;
+    }
+  }
+
+  &__menu {
+    // Mobile Menu
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      position: relative;
+      font-size: $font-sm;
+      color: $grayishBlue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        background: $darkBlue;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover{
+        color: $darkBlue;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
