@@ -1,0 +1,71 @@
+.hero {
+  background: $secondary;
+  height: 85vh;
+  overflow: hidden;
+
+  
+  &__container {
+    height: 100%;
+
+    @include breakpoints-up(medium){
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__image {
+    overflow: hidden;
+    position: relative;
+    height: 50%;
+
+    @include breakpoints-up(medium){
+      flex: 2;
+      order: 2;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("/src/img/mockupHedear.png");
+      background-size: 40vh;
+      background-repeat: no-repeat;
+      background-position: right top;
+
+      @include breakpoints-up(medium){
+        background-size: 45vh;
+        background-position: right bottom;
+      }
+
+      @include breakpoints-up(large){
+        background-size: 60vh;
+        background-position: center 15vh;
+      }
+    }
+  }
+
+  &__text {
+    height: 50%;
+    text-align: center;
+
+    @include breakpoints-up(medium){
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.31rem;
+      line-height: 1.15;
+      color: $darkBlue;
+      margin-bottom: 2.25rem;
+
+      @include breakpoints-up(large) {
+        margin-bottom: 4rem;
+        font-size: $font-xlm;
+      }
+    }
+  }
+}

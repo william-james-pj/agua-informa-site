@@ -26,7 +26,6 @@
   nav {
     position: relative;
     background: $white;
-    padding: 1.0625rem 1.5rem; // 17px 24px
   }
 
   &__logo {
@@ -89,7 +88,7 @@
         background: $darkBlue;
         left: 0;
         right: 0;
-        bottom: -30px;
+        bottom: -40px;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
