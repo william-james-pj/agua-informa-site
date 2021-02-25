@@ -631,13 +631,12 @@ button:hover, .button:hover {
   }
 }
 
-.information__list .iconCheck {
-  display: block;
+.information__list img {
   width: 25px;
   height: 25px;
-  background-image: url("/src/img/checked.svg");
-  background-size: cover;
   margin-right: 20px;
+  -webkit-filter: invert(38%) sepia(84%) saturate(1924%) hue-rotate(192deg) brightness(100%) contrast(105%);
+          filter: invert(38%) sepia(84%) saturate(1924%) hue-rotate(192deg) brightness(100%) contrast(105%);
 }
 
 .functions {
