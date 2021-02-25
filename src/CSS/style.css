@@ -639,4 +639,64 @@ button:hover, .button:hover {
   background-size: cover;
   margin-right: 20px;
 }
+
+.functions {
+  background: #2d314d;
+  width: 100vw;
+}
+
+.function__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .function__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .function__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.function__item {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .function__item {
+    text-align: left;
+  }
+}
+
+.function__item img {
+  vertical-align: top;
+  width: 50px;
+  -webkit-filter: invert(91%) sepia(1%) saturate(2956%) hue-rotate(187deg) brightness(103%) contrast(104%);
+          filter: invert(91%) sepia(1%) saturate(2956%) hue-rotate(187deg) brightness(103%) contrast(104%);
+}
+
+.function__item h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.function__item p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .function__item p {
+    font-size: 0.875rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

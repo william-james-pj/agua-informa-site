@@ -1,0 +1,50 @@
+.functions {
+  background: $darkBlue;
+  width: 100vw;
+}
+
+.function {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(23.125rem, 1fr));
+
+    @include breakpoints-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoints-up(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @include breakpoints-up(medium) {
+      text-align: left;
+    }
+
+    img {
+      vertical-align: top;
+      width: 50px;
+      filter: invert(91%) sepia(1%) saturate(2956%) hue-rotate(187deg)
+        brightness(103%) contrast(104%);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: $white;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5;
+
+      @include breakpoints-up(large) {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
