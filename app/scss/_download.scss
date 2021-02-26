@@ -1,0 +1,99 @@
+.downloads {
+  background: $secondary;
+}
+
+.download {
+  &__content {
+    height: 100%;
+    @include breakpoints-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__text {
+    text-align: center;
+
+    @include breakpoints-up(large) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.18rem;
+
+      @include breakpoints-up(large) {
+        font-size: $font-sm;
+      }
+    }
+    h1 {
+      color: $darkBlue;
+      line-height: 1.5;
+      font-size: $font-med;
+      margin-bottom: 2.5rem;
+
+      @include breakpoints-up(medium) {
+        font-size: $font-xl;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    height: 50%;
+
+    @include breakpoints-up(large) {
+      flex: 2;
+      order: 2;
+      height: 100%;
+    }
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  &__flex {
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include breakpoints-up(medium) {
+      justify-content: space-between;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 1rem;
+    text-align: left;
+
+    @include breakpoints-up(large) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 30px;
+      margin-right: 1rem;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+        brightness(102%) contrast(102%);
+    }
+
+    span:nth-child(1) {
+      font-size: 10px;
+
+      @include breakpoints-up(medium) {
+        font-size: 12px;
+      }
+    }
+
+    span:nth-child(2) {
+      font-size: 12px;
+      @include breakpoints-up(medium) {
+        font-size: 14px;
+      }
+    }
+  }
+}
