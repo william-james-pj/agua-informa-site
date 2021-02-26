@@ -85,7 +85,6 @@ body {
   font-weight: 300;
   color: #9698a6;
   line-height: 1.3;
-  min-height: 550vh;
   overflow-x: hidden;
 }
 
@@ -840,6 +839,20 @@ button:hover,
 @media (min-width: 40em) {
   .download__buttons span:nth-child(2) {
     font-size: 14px;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 40em) {
+  footer p {
+    font-size: 0.875rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

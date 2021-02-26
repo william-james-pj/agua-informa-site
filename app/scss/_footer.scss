@@ -1,0 +1,11 @@
+footer{
+    text-align: center;
+    p {
+        font-size: 0.75rem;
+        
+        @include breakpoints-up(medium) {
+            font-size: $font-sm;
+        }
+    }
+
+}
