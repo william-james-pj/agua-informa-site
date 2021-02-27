@@ -40,8 +40,10 @@ _Para saber mais sobre o aplicativo acesse esse [repositório](https://github.co
 
 ### Construído com
 
-O projeto foi construído utilizando o gatsbyjs.
-* [gatsbyjs](https://www.gatsbyjs.com/)
+O projeto foi construído utilizando
+* HTML
+* CSS
+* JavaScript
 
 # Começando
 
@@ -49,24 +51,7 @@ Para obter uma cópia local desse repositório, siga estas etapas.
 
 ### Pré-requisitos
 
-Para usar esse repositório, são necessários os seguintes softwares:
-
-* Node.js
-  
-  Baixe e instale a versão mais recente do Node.js do [site oficial do Node.js](https://nodejs.org/en/).
-
-* [yarn](https://classic.yarnpkg.com/en/docs/install/)
-  
-  Instalar via npm
-  ```sh
-  npm install --global yarn
-  ```
-  
-  Instalar via Chocolatey
-  ```sh
-  choco install yarn
-  ```
-
+Para usar esse repositório, é necessário apenas um editor de código.
 
 ### Instalação
 
@@ -74,19 +59,7 @@ Para usar esse repositório, são necessários os seguintes softwares:
    ```sh
    git clone https://github.com/william-james-pj/agua-informa-site.git
    ```
-2. Na raiz do projeto, instale todas as dependências definidas no package.json:
-   ```sh
-   yarn install
-   ```
-3. Execute esse comando para começar a desenvolver:
-   ```sh
-   yarn start
-   ```
-4. Abra o código-fonte e comece a editar!
-
-  Seu site agora está sendo executado em `http://localhost:8000`.
-
-  _Você também pode usar a ferramenta graphql para fazer experiências com a consulta de seus dados. Acessando_ `http://localhost:8000/___graphql`.
+2. Abra o código-fonte e comece a editar!
 
 ## Licença
 
