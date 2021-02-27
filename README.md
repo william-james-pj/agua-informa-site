@@ -31,7 +31,7 @@
 
 ## Sobre o projeto
 
-![AguaInforma-screenshot](https://github.com/william-james-pj/agua-informa-site/blob/master/imgReadme/img.png?raw=true)
+![AguaInforma-screenshot](https://github.com/william-james-pj/agua-informa-site/blob/main/imgReadme/img.png?raw=true)
 
 <br />
 Esse repositório é um complemento do aplicativo Água informa, onde foi elaborado um site para a apresentação do aplicativo.
