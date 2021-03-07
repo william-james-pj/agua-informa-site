@@ -524,7 +524,7 @@ button:hover,
 }
 
 .information {
-  height: 140vh;
+  height: auto;
   overflow: hidden;
 }
 
