@@ -38,6 +38,8 @@ Esse repositório é um complemento do aplicativo Água informa, onde foi elabor
 
 _Para saber mais sobre o aplicativo acesse esse [repositório](https://github.com/william-james-pj/agua-informa-app)._
 
+Acesse o [demo](https://william-james-pj.github.io/agua-informa-site/)
+
 ### Construído com
 
 O projeto foi construído utilizando
